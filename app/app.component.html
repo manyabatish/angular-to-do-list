@@ -1,0 +1,13 @@
+
+<div class="div1" align="center">
+<h1><b>TO-DO LIST</b></h1>
+<input type="text" [(ngModel)]="eventadd"/>
+<br/><br/>
+  &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+  <button class="addeve" (click)="onAdd()">AddEvent</button>
+<br><br>
+<div class="div2" *ngFor="let a of events;let i=index">
+<strong>{{a}}</strong> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+    <button class="dlt" (click)="onDelete(i)">REMOVE</button>
+</div>
+</div>
